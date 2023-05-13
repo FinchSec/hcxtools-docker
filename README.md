@@ -10,8 +10,8 @@ Docker for https://github.com/ZerBea/hcxtools using Kali as a base. Rebuilt dail
 
 URL: https://hub.docker.com/r/finchsec/hcxtools
 
-`sudo docker pull finchsec/reaver`
+`sudo docker pull finchsec/hcxtools`
 
 ## Running
 
-`sudo docker run --rm -it --privileged --net=host --pid=host finchsec/reaver`
+`sudo docker run --rm -it finchsec/hcxtools`
