@@ -1,0 +1,5 @@
+services:
+    hcxtools:
+        stdin_open: true
+        tty: true
+        image: finchsec/hcxtools
