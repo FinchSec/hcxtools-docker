@@ -14,7 +14,7 @@ LABEL org.opencontainers.image.authors="thomas@finchsec.com"
 # hadolint ignore=DL3005,DL3008
 RUN apt-get update && \
     apt-get dist-upgrade -y && \
-        apt-get install ca-certificates zlib1g libcurl4 --no-install-recommends -y && \
+        apt-get install ca-certificates zlib1g libcurl4t64 --no-install-recommends -y && \
         apt-get autoclean && \
 		rm -rf /var/lib/dpkg/status-old /var/lib/apt/lists/*
 COPY --from=builder /hcxtools/usr/bin/* /usr/local/bin/
